@@ -469,12 +469,34 @@ input::-webkit-input-placeholder { color: #445162; }
     list-style: none;
 }
 
-.contacts-general span{
+.social-image {
+    /* display: inline-block; */
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 5px 0 5px 30px;
+}
+.skype {
+    background-image: url('../img/skype_icon.png');
+}
+
+.icq {
+    background-image: url('../img/icq_icon.png');
+}
+
+.e-mail {
+    background-image: url('../img/email_icon.png');
+}
+
+.phone {
+    background-image: url('../img/phone_icon.png');
+}
+
+/* .contacts-general span{
     font-family: FontAwesome;
     color: #ffffff;
     font-weight: 900;
     margin-right: 10px; 
-}
+} */
 
 .contacts-social {
     display: inline;
