@@ -69,7 +69,7 @@ body h3{
 .main-header li {
     margin: 0;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1.8;
     list-style: none;
 }
 
@@ -112,6 +112,7 @@ main {
 
 .about p {
     margin: 0 0 10px 0;
+    line-height: 1.5;
 }
 
 .about video {
@@ -153,6 +154,7 @@ main {
 .dignity li {
     margin: 0 0 40px 0;
     position: relative;
+    line-height: 1.5;
 }
 
 .dignity li:before {
@@ -230,9 +232,8 @@ main {
 
 .screenshots p {
     margin: 0 0 10px 0;
+    line-height: 1.5;
 }
-
-
 
 /* .reviews */
 .reviews {
@@ -268,6 +269,7 @@ main {
     padding: 0;
     margin: 0 0 25px 0;
     font-size: 14px;
+    line-height: 1.286;
     font-style: italic;
     /* outline: 1px solid red; */
 }
@@ -374,6 +376,7 @@ main {
     padding: 20px 0 20px 40px;
     color: #ffffff;
     font-size: 14px;
+    line-height: 1.714;
     background-color: #445162;
 }
 
@@ -390,6 +393,18 @@ main {
     border: 1px solid #445162; 
     color: #445162;
     background-color: #ffffff;
+}
+
+.btn:hover {
+    background-color: yellow;
+}
+
+.btn:active {
+    outline: none;
+}
+
+.btn:focus {
+    outline: none;
 }
 
 /* .contacts */
@@ -419,6 +434,7 @@ main {
 .contacts-wrp {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     /* outline: 1px solid red;; */
@@ -457,49 +473,53 @@ input::-webkit-input-placeholder { color: #445162; }
     outline: none;
 }
 
+.contacts-general {
+    /* margin: 0 0 20px 0;
+    padding: 0; */
+    display: flex;
+    flex-direction: column;
+}
+
+.social-image {
+    display: block;
+    margin: 0 0 0 45px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 35px;
+    padding: 10px 0px 0px 40px;
+    background-image: url('../img/social_icons.png');
+    background-repeat: no-repeat;
+}
+
+.skype {
+    background-position: left top;
+}
+
+.icq {
+    background-position: 0px -36px;
+}
+
+.e-mail {
+    background-position: 0px -72px;
+}
+
+.phone {
+    background-position: 0px -112px;
+}
+
+.social-image::after{
+    display: block;
+    clear: both;
+}
 
 .contacts ul {
     margin: 0 0 0 45px;
     padding: 0;
     font-size: 16px;
 }
-.contacts-general {
-    margin: 0 0 20px 0;
-    padding: 0;
-    list-style: none;
-}
-
-.social-image {
-    /* display: inline-block; */
-    background-position: left top;
-    background-repeat: no-repeat;
-    padding: 5px 0 5px 30px;
-}
-.skype {
-    background-image: url('../img/skype_icon.png');
-}
-
-.icq {
-    background-image: url('../img/icq_icon.png');
-}
-
-.e-mail {
-    background-image: url('../img/email_icon.png');
-}
-
-.phone {
-    background-image: url('../img/phone_icon.png');
-}
-
-/* .contacts-general span{
-    font-family: FontAwesome;
-    color: #ffffff;
-    font-weight: 900;
-    margin-right: 10px; 
-} */
 
 .contacts-social {
-    display: inline;
+    display: inline-block;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -512,7 +532,6 @@ input::-webkit-input-placeholder { color: #445162; }
 .contacts a {
     color: #ffffff;
     text-decoration: none;
-    /* background-image: url(img/skype_icon.png); */
 }
 
 /* .main-footer */
